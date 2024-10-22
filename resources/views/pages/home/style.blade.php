@@ -48,14 +48,14 @@
                             <tbody>
                                 @foreach ($combining as $c)
                                     <tr>
-                                        <td class="py-3 text-left">
+                                        <td class="py-3 text-left position-relative preview-header overflow-x-auto" style="height: 100px;">
                                             <div class="d-flex justify-content-between">
                                                 <span>{{ $c->name }}</span>
                                                 <span class="badge badge-warning" onclick="copyToCl(this)">
                                                     {{ __('Copy') }}
                                                 </span>
                                             </div>
-                                            <span class="preview" data-code="{{ $c->code }}"
+                                            <span class="preview position-absolute bottom-0 text-nowrap" data-code="{{ $c->code }}"
                                                 data-title="{{ $c_style->short_title . ' ' . $c->name }}"
                                                 style="font-size: 40px;"></span>
 
@@ -91,8 +91,9 @@
             previews.each(function(index, element) {
                 let code = $(this).data('code');
                 let text = $('#input-text').val() == "" ? "{{ __('Type hear to preview text') }}" : $('#input-text').val();
-                let result = toUnicodeVariant(text, "{{ $c_style->variant_code }}",code);
+                let result = toUnicodeVariant(text, code);
                 $(this).css('font-size', val + 'px');
+                $(this).parent().css('height', val + 50 + 'px');
                 $(this).html(result);
             })
         }

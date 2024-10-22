@@ -46,18 +46,17 @@
                             </thead>
                             <tbody>
                                 @foreach (cache('sidebarData')['styles'] as $style)
-                                    <tr>
-                                        <td class="py-3 text-left">
+                                    <tr class="">
+                                        <td class="py-3 text-left position-relative preview-header overflow-x-auto" style="height: 100px;">
                                             <div class="d-flex justify-content-between">
                                                 <span>{{ $style->short_title }}</span>
                                                 <span class="badge badge-warning" onclick="copyToCl(this)">
                                                     {{ __('Copy') }}
                                                 </span>
                                             </div>
-                                            <span class="preview" data-code="{{ $style->variant_code }}"
+                                            <span class="preview position-absolute bottom-0 text-nowrap" data-code="{{ $style->variant_code }}"
                                                 data-title="{{ $style->short_title }}"
                                                 style="font-size: 40px;"></span>
-
                                         </td>
                                     </tr>
                                 @endforeach
@@ -89,6 +88,7 @@
                 let text = $('#input-text').val() == "" ? "{{ __('Type hear to preview text') }}" : $('#input-text').val();
                 let result = toUnicodeVariant(text, code);
                 $(this).css('font-size', val + 'px');
+                $(this).parent().css('height', val + 50 + 'px');
                 $(this).html(result);
             })
         }
