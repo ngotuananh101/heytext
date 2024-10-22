@@ -47,7 +47,7 @@
                             <tbody>
                                 @foreach (cache('sidebarData')['styles'] as $style)
                                     <tr class="">
-                                        <td class="py-3 text-left position-relative preview-header overflow-x-auto" style="height: 100px;">
+                                        <td class="py-3 text-left position-relative preview-header" style="height: 100px;">
                                             <div class="d-flex justify-content-between">
                                                 <span>{{ $style->short_title }}</span>
                                                 <span class="badge badge-warning" onclick="copyToCl(this)">
@@ -88,7 +88,7 @@
                 let text = $('#input-text').val() == "" ? "{{ __('Type hear to preview text') }}" : $('#input-text').val();
                 let result = toUnicodeVariant(text, code);
                 $(this).css('font-size', val + 'px');
-                $(this).parent().css('height', val + 50 + 'px');
+                $(this).parent().css('height', val + 60 + 'px');
                 $(this).html(result);
             })
         }

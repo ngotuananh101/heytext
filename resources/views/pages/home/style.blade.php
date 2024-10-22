@@ -48,7 +48,7 @@
                             <tbody>
                                 @foreach ($combining as $c)
                                     <tr>
-                                        <td class="py-3 text-left position-relative preview-header overflow-x-auto" style="height: 100px;">
+                                        <td class="py-3 text-left position-relative preview-header" style="height: 100px;">
                                             <div class="d-flex justify-content-between">
                                                 <span>{{ $c->name }}</span>
                                                 <span class="badge badge-warning" onclick="copyToCl(this)">
