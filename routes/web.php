@@ -3,9 +3,5 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
-Route::group([
-    'middleware' => 'sidebarData'
-], function () {
-    Route::get('/', [HomeController::class, 'index'])->name('home.index');
-    Route::get('/style/{slug}', [HomeController::class, 'style'])->name('style.show');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/fonts/{slug}', [HomeController::class, 'fonts'])->name('fonts');

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ais-SearchBox-input{
+    border: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.ais-Hits-item{
+    border: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
