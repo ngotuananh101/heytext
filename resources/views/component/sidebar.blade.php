@@ -5,7 +5,7 @@
             <span class="text-[12px] font-medium">{{ __('Fonts') }}</span>
         </a>
 
-        <a href="{{ route('unicode') }}" class="text-center flex flex-col">
+        <a href="{{ route('unicode') }}" class="text-center flex flex-col items-center">
             <i class="fa-solid fa-square-u text-[24px] mb-[8px] {{ request()->routeIs('unicode') ? 'bg-[#cbf0f8] px-5 py-1 rounded-2xl w-fit' : '' }}"></i>
             <span class="text-[12px] font-medium">{{ __('Unicode') }}</span>
         </a>

@@ -1,0 +1,94 @@
+[
+    {
+        "Combining": "strike",
+        "Short": "s"
+    },
+    {
+        "Combining": "strike-curly",
+        "Short": "sc"
+    },
+    {
+        "Combining": "underline",
+        "Short": "u"
+    },
+    {
+        "Combining": "underline-curly",
+        "Short": "uc"
+    },
+    {
+        "Combining": "underline-sm",
+        "Short": "u-sm"
+    },
+    {
+        "Combining": "underline-double",
+        "Short": "ud"
+    },
+    {
+        "Combining": "underline-double-sm",
+        "Short": "ud-sm"
+    },
+    {
+        "Combining": "overline",
+        "Short": "o"
+    },
+    {
+        "Combining": "overline-curly",
+        "Short": "oc"
+    },
+    {
+        "Combining": "overline-sm",
+        "Short": "o-sm"
+    },
+    {
+        "Combining": "overline-double",
+        "Short": "od"
+    },
+    {
+        "Combining": "slash",
+        "Short": "sl"
+    },
+    {
+        "Combining": "cross-above",
+        "Short": "ca"
+    },
+    {
+        "Combining": "plus-below",
+        "Short": "pb"
+    },
+    {
+        "Combining": "enclose-circle",
+        "Short": "en-c"
+    },
+    {
+        "Combining": "enclose-circle-backslash",
+        "Short": "en-cb"
+    },
+    {
+        "Combining": "enclose-square",
+        "Short": "en-s"
+    },
+    {
+        "Combining": "enclose-diamond",
+        "Short": "en-d"
+    },
+    {
+        "Combining": "enclose-screen",
+        "Short": "en-scr"
+    },
+    {
+        "Combining": "enclose-keycap",
+        "Short": "en-k"
+    },
+    {
+        "Combining": "halo-breve",
+        "Short": "hb"
+    },
+    {
+        "Combining": "halo-grave",
+        "Short": "hg"
+    },
+    {
+        "Combining": "𝑛-above",
+        "Short": "{a..x}-a"
+    }
+]

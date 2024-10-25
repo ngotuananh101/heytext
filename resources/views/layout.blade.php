@@ -25,7 +25,9 @@
             {{-- Header --}}
             <header class="px-[60px] flex flex-col sticky top-0 bg-white">
                 <div id="header_main" class="flex h-[88px] items-center justify-between gap-5">
-                    <img src="{{ asset('assets/images/logo.png') }}" alt="" srcset="" class="h-[40px]">
+                    <a href="{{ route('home') }}">
+                        <img src="{{ asset('assets/images/logo.png') }}" alt="" srcset="" class="h-[40px]">
+                    </a>
                     <div class="flex-grow flex items-center bg-[#f3f6fc] h-[56px] rounded-full px-5 gap-5">
                         <i class="fa-regular fa-magnifying-glass"></i>
                         <input class="bg-transparent flex-grow focus-visible:outline-0" placeholder="Search fonts"

@@ -102,8 +102,12 @@ class HomeController extends Controller
             "48px",
             "72px"
         );
+        $variant = file_get_contents(public_path('assets/data/variants.json'));
+        $combining = file_get_contents(public_path('assets/data/combining.json'));
         return view('unicode', [
             'fontSizes' => $fontSizes,
+            'variant' => $variant,
+            'combining' => $combining
         ]);
     }
 }

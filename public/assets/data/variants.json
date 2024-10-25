@@ -1,0 +1,98 @@
+[
+    {
+        "Variant": "monospace",
+        "Alias": "m"
+    },
+    {
+        "Variant": "bold",
+        "Alias": "b"
+    },
+    {
+        "Variant": "italic",
+        "Alias": "i"
+    },
+    {
+        "Variant": "bold italic",
+        "Alias": "bi"
+    },
+    {
+        "Variant": "script",
+        "Alias": "c"
+    },
+    {
+        "Variant": "bold script",
+        "Alias": "bc"
+    },
+    {
+        "Variant": "gothic",
+        "Alias": "g"
+    },
+    {
+        "Variant": "gothic bold",
+        "Alias": "bg"
+    },
+    {
+        "Variant": "doublestruck",
+        "Alias": "d"
+    },
+    {
+        "Variant": "𝗌𝖺𝗇𝗌",
+        "Alias": "s"
+    },
+    {
+        "Variant": "bold 𝗌𝖺𝗇𝗌",
+        "Alias": "bs"
+    },
+    {
+        "Variant": "italic 𝗌𝖺𝗇𝗌",
+        "Alias": "is"
+    },
+    {
+        "Variant": "bold italic sans",
+        "Alias": "bis"
+    },
+    {
+        "Variant": "circled",
+        "Alias": "o"
+    },
+    {
+        "Variant": "circled negative",
+        "Alias": "on"
+    },
+    {
+        "Variant": "squared",
+        "Alias": "q"
+    },
+    {
+        "Variant": "squared negative",
+        "Alias": "qn"
+    },
+    {
+        "Variant": "paranthesis",
+        "Alias": "p"
+    },
+    {
+        "Variant": "fullwidth",
+        "Alias": "w"
+    },
+    {
+        "Variant": "flags",
+        "Alias": "f"
+    },
+    {
+        "Variant": "numbers dot",
+        "Alias": "nd"
+    },
+    {
+        "Variant": "numbers comma",
+        "Alias": "nc"
+    },
+    {
+        "Variant": "number double circled",
+        "Alias": "ndc"
+    },
+    {
+        "Variant": "roman",
+        "Alias": "r"
+    }
+]
