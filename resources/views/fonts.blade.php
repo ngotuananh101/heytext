@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', $font->name)
+
 @section('content')
     <div class="flex justify-between items-center mb-5">
         <div class="flex">

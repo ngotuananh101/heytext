@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hey Text</title>
+    <title>@yield('title') - Hey Text</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -44,13 +44,6 @@
                                 </div>
                             </div>
                         </dialog>
-                        <i
-                            class="fa-sharp fa-thin fa-pipe h-full text-[56px] w-[1px] overflow-hidden text-[rgba(0,0,0,.12)]"></i>
-                        <select name="" id="" class="bg-transparent focus-visible:outline-0">
-                            <option value="">{{ __('All') }}</option>
-                            <option value="">{{ __('Fonts') }}</option>
-                            <option value="">{{ __('Emojis') }}</option>
-                        </select>
                     </div>
                 </div>
                 @yield('header')

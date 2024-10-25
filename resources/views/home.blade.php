@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', 'Home')
+
 @section('content')
     <div class="flex justify-between items-center">
         <span class="text-[#5f6368] text-sm">Showing top 12 fonts</span>
