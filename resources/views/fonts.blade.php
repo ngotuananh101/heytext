@@ -9,6 +9,10 @@
                 Specimen
             </button>
         </div>
+        <a href="{{ asset($font->url ) }}"
+            class="rounded-full px-[16px] bg-[#1a73e8] text-[16px] h-[48px] text-white font-medium flex justify-center items-center gap-1">
+            Download this font
+        </a>
     </div>
     <div class="flex flex-col">
         <h1 class="text-[56px]">
@@ -24,11 +28,13 @@
             Styles
         </h2>
         <div class="flex h-[56px] my-[40px] justify-between items-center">
-            <input type="text" placeholder="Type here" class="input input-bordered w-full h-full rounded-full px-[36px] flex-grow" id="text_input" />
+            <input type="text" placeholder="Type here"
+                class="input input-bordered w-full h-full rounded-full px-[36px] flex-grow" id="text_input" />
             <div class="flex w-full max-w-[400px] items-center">
                 <select class="select text-[16px]" id="size_input">
                     @foreach ($fontSizes as $size)
-                        <option value="{{ $size }}" {{ $size == '48px' ? 'selected' : '' }}>{{ $size }}</option>
+                        <option value="{{ $size }}" {{ $size == '48px' ? 'selected' : '' }}>{{ $size }}
+                        </option>
                     @endforeach
                 </select>
                 <input type="range" min="8" max="280" value="48" class="range" id="range_input" />
@@ -43,7 +49,8 @@
                                 {{ $key }}
                             </h1>
                         </div>
-                        <div class="font_temp flex justify-start items-center max-w-full overflow-hidden text-nowrap {{ $font->slug }}" style="font-weight: {{ $w[0] }}; font-style: {{ $w[1] }}; font-size: 48px;">
+                        <div class="font_temp flex justify-start items-center max-w-full overflow-hidden text-nowrap {{ $font->slug }}"
+                            style="font-weight: {{ $w[0] }}; font-style: {{ $w[1] }}; font-size: 48px;">
                             <span>
                                 {{ $testText }}
                             </span>
@@ -65,7 +72,7 @@
             src: url('/{{ $font->url }}') format('{{ $font->format }}');
         }
 
-        .{{ $font->slug }}{
+        .{{ $font->slug }} {
             font-family: {{ $font->name }}, serif;
         }
     </style>
