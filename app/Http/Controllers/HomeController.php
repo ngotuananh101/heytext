@@ -87,4 +87,23 @@ class HomeController extends Controller
             'fontWeight' => $fontWeight
         ]);
     }
+
+    public function unicode()
+    {
+        $fontSizes = array(
+            "8px",
+            "10px",
+            "12px",
+            "14px",
+            "16px",
+            "18px",
+            "24px",
+            "32px",
+            "48px",
+            "72px"
+        );
+        return view('unicode', [
+            'fontSizes' => $fontSizes,
+        ]);
+    }
 }

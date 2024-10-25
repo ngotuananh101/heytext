@@ -28,21 +28,18 @@
                     <img src="{{ asset('assets/images/logo.png') }}" alt="" srcset="" class="h-[40px]">
                     <div class="flex-grow flex items-center bg-[#f3f6fc] h-[56px] rounded-full px-5 gap-5">
                         <i class="fa-regular fa-magnifying-glass"></i>
-                        <input type="text" class="bg-transparent flex-grow focus-visible:outline-0"
-                            placeholder="Search fonts" onclick="my_modal_1.showModal()">
-                        <dialog id="my_modal_1" class="modal">
+                        <input class="bg-transparent flex-grow focus-visible:outline-0" placeholder="Search fonts"
+                            onclick="my_modal_2.showModal()">
+                        <dialog id="my_modal_2" class="modal">
                             <div class="modal-box p-3 max-w-3xl w-full">
                                 <div class="ais-InstantSearch">
                                     <div id="searchbox"></div>
                                     <div id="hits"></div>
                                 </div>
-                                <div class="modal-action">
-                                    <form method="dialog">
-                                        <!-- if there is a button in form, it will close the modal -->
-                                        <button class="btn">Close</button>
-                                    </form>
-                                </div>
                             </div>
+                            <form method="dialog" class="modal-backdrop">
+                                <button>close</button>
+                            </form>
                         </dialog>
                     </div>
                 </div>
