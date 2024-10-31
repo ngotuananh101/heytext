@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Unicode Character')
+@section('title', __('Unicode Character'))
 
 @section('content')
     <div class="flex justify-between items-center mb-5">
@@ -8,22 +8,22 @@
             <button
                 class="rounded-full px-[16px] bg-[#e8f0fe] text-[16px] h-[48px] text-[#174ea6] font-medium flex justify-center items-center gap-1">
                 <i class="fa-light fa-square-a font-medium text-[20px]"></i>
-                Specimen
+                {{ __('Specimen') }}
             </button>
             <button onclick="variant.showModal()"
                 class="rounded-full px-[16px] text-[16px] h-[48px] text-[#202124] font-medium flex justify-center items-center gap-1">
                 <i class="fa-sharp fa-light fa-pen-swirl font-medium text-[20px]"></i>
-                Variant
+                {{ __('Variant') }}
             </button>
             <dialog id="variant" class="modal">
                 <div class="modal-box max-w-3xl w-full">
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Variant</th>
-                                <th>Alias</th>
-                                <th>Description</th>
-                                <th>Example</th>
+                                <th>{{ __('Variant') }}</th>
+                                <th>{{ __('Alias') }}</th>
+                                <th>{{ __('Description') }}</th>
+                                <th>{{ __('Example') }}</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -181,16 +181,16 @@
             <button onclick="combining.showModal()"
                 class="rounded-full px-[16px] text-[16px] h-[48px] text-[#202124] font-medium flex justify-center items-center gap-1">
                 <i class="fa-sharp-duotone fa-solid fa-merge font-medium text-[20px]"></i>
-                Combining
+                {{ __('Combining') }}
             </button>
             <dialog id="combining" class="modal">
                 <div class="modal-box max-w-3xl w-full">
                     <table class="table text-left">
                         <thead>
                             <tr>
-                                <th>Combining</th>
-                                <th>Short</th>
-                                <th>Sample (italic variant)</th>
+                                <th>{{ __('Combining') }}</th>
+                                <th>{{ __('Short') }}</th>
+                                <th>{{ __('Sample (italic variant)') }}</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -320,16 +320,16 @@
     </div>
     <div class="flex flex-col">
         <h1 class="text-[56px]">
-            Unicode Character Generator
+            {{ __('Unicode Character Generator') }}
         </h1>
         <p class="text-[#5f6368]">
-            Designed by <span class="text-[#1a73e8]">Hey Text</span>
+            {{ __('Designed by') }} <span class="text-[#1a73e8]">{{ config('app.name') }}</span>
         </p>
         <h1 class="text-[57px] text-center my-[48px]">
             Ⓖⓔⓝⓔⓡⓐⓣⓔ ⓤⓝⓘⓒⓞⓓⓔ ⓒⓗⓐⓡⓐⓒⓣⓔⓡ
         </h1>
         <h2 class="text-[32px]">
-            Preview
+            {{ __('Preview') }}
         </h2>
         <div class="flex h-[56px] mt-[40px] justify-between items-center">
             <input type="text" placeholder="Type here"
@@ -346,20 +346,20 @@
         </div>
         <div class="flex h-[56px] mb-[40px] mt-[10px] justify-center items-center gap-3">
             <span class="text-nowrap">
-                Select style:
+                {{ __('Select style') }}:
             </span>
             <select class="select select-bordered w-full max-w-xs rounded-full" id="variantSelect">
-                <option selected>Select variant</option>
+                <option selected>{{ __('Select variant') }}</option>
             </select>
             <select class="select select-bordered w-full max-w-xs rounded-full" id="combiningSelect">
-                <option selected>Select combining</option>
+                <option selected>{{ __('Select combining') }}</option>
             </select>
         </div>
         <div class="grid grid-cols-1 mt-3">
             <div class="flex flex-col p-5 rounded-xl hover:bg-[#ededed]">
                 <div class="font_temp flex justify-start items-center max-w-full" style="font-size: 48px;">
                     <span>
-                        This is preview text
+                        {{ __('This is preview text') }}
                     </span>
                 </div>
             </div>

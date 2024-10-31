@@ -3,15 +3,30 @@
 namespace App\Http\Controllers;
 
 use App\Models\Font;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $fonts = Font::all()->take(10) ?? [];
-        return view('home', [
-            'fonts' => $fonts
-        ]);
+        $page = $request->input('page') ?? 1;
+        if ($page <= 1) {
+            $totalFonts = Font::all()->count();
+            $fonts = Font::paginate(20);
+            return view('home', [
+                'fonts' => $fonts,
+                'totalFonts' => $totalFonts
+            ]);
+        } else {
+            $fonts = Font::paginate(20, ['*'], 'page', $page);
+            return response()->json($fonts);
+        }
+    }
+
+
+    public function getMoreFonts($page)
+    {
+        $fonts = Font::all()->skip($page * 10)->take(10) ?? [];
     }
 
     public function fonts($slug)

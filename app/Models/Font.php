@@ -16,4 +16,13 @@ class Font extends Model
         'format',
         'icon'
     ];
+
+    protected $appends = [
+        'demo_text'
+    ];
+
+    public function getDemoTextAttribute()
+    {
+        return fake()->paragraph(1);
+    }
 }
