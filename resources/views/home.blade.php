@@ -62,8 +62,9 @@
 @endsection
 
 @section('scripts')
-    <script>
-        let nextPage = "{{ $fonts->nextPageUrl() }}";
+    <script type="module">
+        window.nextPage = "{{ $fonts->nextPageUrl() }}";
+        console.log(window.nextPage);
     </script>
-    <script src="{{ asset('assets/js/home.js') }}"></script>
+    <script src="{{ asset('assets/js/home.js') }}" type="module"></script>
 @endsection
