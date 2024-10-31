@@ -26,8 +26,6 @@ $(document).ready(function () {
     // load more data when scroll
     $('#main').on('scroll', function () {
         let page = window.nextPage;
-        console.log(page, $(this).scrollTop() + $(this).innerHeight(), $(this)[0].scrollHeight);
-
         if ($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight && !loading && page) {
             $.ajax({
                 url: page,
