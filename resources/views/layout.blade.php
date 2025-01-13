@@ -56,7 +56,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     @yield('scripts')
     <script>
-        window.risposeWidgetId = "nd2adrxspwc2"
+        window.risposeWidgetId = "{{ env('RISPOSE_WIDGET_ID') }}";
     </script>
     <script defer src="https://rispose.com/cdn/script.js"></script>
 </body>
