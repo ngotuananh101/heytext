@@ -18,7 +18,7 @@
     @yield('styles')
 </head>
 
-<body class="font-sans antialiased bg-white dark:bg-neutral-900 text-black dark:text-white h-screen max-h-screen">
+<body class="h-screen max-h-screen font-sans antialiased text-black bg-white dark:bg-neutral-900 dark:text-white">
     <div class="flex h-full">
         @include('component.sidebar')
         <div id="main" class="flex-grow max-h-screen overflow-y-auto">
@@ -30,10 +30,10 @@
                     </a>
                     <div class="flex-grow flex items-center bg-[#f3f6fc] h-[56px] rounded-full px-5 gap-5">
                         <i class="fa-regular fa-magnifying-glass"></i>
-                        <input class="bg-transparent flex-grow focus-visible:outline-0" placeholder="Search fonts"
+                        <input class="flex-grow bg-transparent focus-visible:outline-0" placeholder="Search fonts"
                             onclick="my_modal_2.showModal()">
                         <dialog id="my_modal_2" class="modal">
-                            <div class="modal-box p-3 max-w-3xl w-full">
+                            <div class="w-full max-w-3xl p-3 modal-box">
                                 <div class="ais-InstantSearch">
                                     <div id="searchbox"></div>
                                     <div id="hits"></div>
@@ -56,7 +56,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     @yield('scripts')
     <script>
-        window.risposeWidgetId = "awe4agwqgr62"
+        window.risposeWidgetId = "nd2adrxspwc2"
     </script>
     <script defer src="https://rispose.com/cdn/script.js"></script>
 </body>
